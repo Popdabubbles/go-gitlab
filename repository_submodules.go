@@ -61,6 +61,8 @@ type UpdateSubmoduleOptions struct {
 	Branch        *string `url:"branch,omitempty" json:"branch,omitempty"`
 	CommitSHA     *string `url:"commit_sha,omitempty" json:"commit_sha,omitempty"`
 	CommitMessage *string `url:"commit_message,omitempty" json:"commit_message,omitempty"`
+	// URL-encoded full path to the submodule. For example, lib%2Fclass%2Erb
+	Submodule *string `url:"submodule,omitempty" json:"submodule,omitempty"`
 }
 
 // UpdateSubmodule updates an existing submodule reference.
